@@ -38,7 +38,7 @@ public class CheapBurgerBuilder implements BurgerBuilder {
     }
 
     @Override
-    public double littleMeatPortion() {
+    public double tinyMeatPortion() {
         return 50;
     }
 

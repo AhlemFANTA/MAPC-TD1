@@ -5,7 +5,7 @@ import td1.refactor.api.general.Meat.MeatType;
 import td1.refactor.api.general.Sauce.SauceType;
 
 public interface BurgerBuilder {
-    double littleMeatPortion();
+    double tinyMeatPortion();
 
     double mediumMeatPortion();
 
@@ -31,7 +31,7 @@ public interface BurgerBuilder {
 
     default double getMeatWeight(MeatType type, MeatSize size) {
         return switch (size) {
-            case LITTLE -> this.littleMeatPortion();
+            case TINY -> this.tinyMeatPortion();
             case MEDIUM -> this.mediumMeatPortion();
             default -> this.bigMeatPortion();
         };

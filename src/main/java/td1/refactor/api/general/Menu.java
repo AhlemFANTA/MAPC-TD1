@@ -1,5 +1,5 @@
 package td1.refactor.api.general;
 
-public enum Menus{
+public enum Menu {
     MEAT, FISH, CHEESE, CUSTOM;
 }

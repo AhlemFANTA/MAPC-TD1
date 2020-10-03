@@ -7,11 +7,11 @@ import td1.refactor.api.general.Meat.MeatSize;
 import td1.refactor.api.general.Meat.MeatType;
 import td1.refactor.api.general.Sauce.SauceType;
 
-public class ExpensiveBurgerBuilder implements BurgerBuilder {
+public class FancyBurgerBuilder implements BurgerBuilder {
     private final List<FoodProduct> products;
     private final String name;
 
-    public ExpensiveBurgerBuilder(String name, MeatType type, MeatSize size) {
+    public FancyBurgerBuilder(String name, MeatType type, MeatSize size) {
         this.name = name;
         this.products = new ArrayList<>();
         this.products.add(new Meat(type, this.getMeatWeight(type, size)));
@@ -38,7 +38,7 @@ public class ExpensiveBurgerBuilder implements BurgerBuilder {
     }
 
     @Override
-    public double littleMeatPortion() {
+    public double tinyMeatPortion() {
         return 100;
     }
 
@@ -80,13 +80,5 @@ public class ExpensiveBurgerBuilder implements BurgerBuilder {
     public Burger cook() {
         return new Burger(this.name, this.products);
     }
-    /*
 
-     * @startuml
-
-     * car --|> wheel
-
-     * @enduml
-
-     */
 }

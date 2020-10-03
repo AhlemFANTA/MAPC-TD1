@@ -3,7 +3,7 @@ package td1.refactor.api.general;
 public class Meat implements FoodProduct {
     public enum MeatType {
         BEEF, WHITEFISH;
-        
+
         public double price() {
             double rtr;
             if (this == MeatType.WHITEFISH) {
@@ -23,7 +23,7 @@ public class Meat implements FoodProduct {
     }
 
     public enum MeatSize {
-        LITTLE, MEDIUM, BIG
+        TINY, MEDIUM, BIG
     }
 
     private final MeatType type;

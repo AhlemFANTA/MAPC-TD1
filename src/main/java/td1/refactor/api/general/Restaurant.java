@@ -5,9 +5,9 @@ import td1.refactor.api.general.Meat.MeatSize;
 
 public interface Restaurant {
     enum RestaurantType {
-        CHEAP, EXPENSIVE
+        CHEAP, FANCY
     }
 
-    BurgerBuilder orderMenu(Menus menuType);
+    BurgerBuilder selectMenu(Menu menuType);
     BurgerBuilder orderPersonal(String name, MeatType type, MeatSize size);
 }

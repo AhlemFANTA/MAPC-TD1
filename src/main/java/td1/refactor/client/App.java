@@ -15,19 +15,19 @@ public class App {
 
         Burger aliceDinner = advisor
                 .selectRestaurant(RestaurantType.CHEAP)
-                .orderMenu(Menus.FISH)
+                .selectMenu(Menu.FISH)
                 .cook();
 
         Burger bobDinner = advisor      
                 .selectRestaurant(RestaurantType.CHEAP)
-                .orderMenu(Menus.MEAT)
+                .selectMenu(Menu.MEAT)
                 .withOnion()
                 .withCheese()
                 .cook();
 
         Burger charlesDinner = advisor
-                .selectRestaurant(RestaurantType.EXPENSIVE)
-                .orderPersonal("Ownstyle", MeatType.BEEF, MeatSize.BIG)
+                .selectRestaurant(RestaurantType.FANCY)
+                .orderPersonal("Own style", MeatType.BEEF, MeatSize.BIG)
                 .withOnion()
                 .withCheese()
                 .withSauce(SauceType.BARBECUE)
