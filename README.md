@@ -1,6 +1,6 @@
 ## TD 1
 
-### Exercice x : étude de cas
+### Exercice 1 : étude de cas
 
 On dispose d'une librairie très simple permettant de simuler la fabrication de Burgers (```td1.original```). On a différents ingrédients qui ont un poids et un prix à partir desquels on peut créér des Burgers. Dans ```td1.original.client.App``` on peut observer trois créations de Burgers.
 
