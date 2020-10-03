@@ -1,0 +1,69 @@
+@startuml classdiagram
+Bob->Alice : Hello
+@enduml
+
+package original.api.general {
+    interface Product {
+        weight(): double
+        price(): double
+    }
+    Product <|.. Burger
+    Product <|.. Cheddar
+    Product <|.. DeepFriedOnions
+    Product <|.. Meat
+    Product <|.. Sauce
+    Product <|.. Tomato
+
+    enum SauceType {
+        BURGER, BARBECUE, BEARNAISE
+    }
+    enum MeatType {
+        BEEF, WHITEFISH
+        + price(): double
+    }
+
+    class Cheddar {
+        - weight: double
+        - BASE_PRICE: double = 4
+        + Cheddar(weight: double)
+        + weight(): double
+        + price(): double
+    }
+    class DeepFriedOnions {
+        - weight: double
+        - BASE_PRICE: double = 1.5
+        + DeepFriedOnions(weight: double)
+        + weight(): double
+        + price(): double
+    }
+    class Tomato {
+        - weight: double
+        - BASE_PRICE = 0.5: double
+        + Tomato(weight: double)
+        + weight(): double
+        + price(): double
+    }
+    class Sauce {
+        - weight: double
+        - BASE_PRICE: double = 1
+        - type: SauceType
+        + Sauce(type: SauceType, weight: double)
+        + weight(): double
+        + price(): double
+    }
+    class Meat {
+        - weight: double
+        - type: MeatType
+        + Meat(type: MeatType, weight: double)
+        + weight(): double
+        + price(): double
+    }
+    class Burger {
+        ~ nom: string
+        ~ items: List<Product>
+        + Burger(name: string, items: List<Product>)
+        + weight(): double
+        + price(): double
+    }
+}
+

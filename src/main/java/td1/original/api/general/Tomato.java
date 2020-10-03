@@ -2,7 +2,7 @@ package td1.original.api.general;
 
 public class Tomato implements Product {
 
-    private double weight;
+    private final double weight;
     private double BASE_PRICE = 0.5;
 
     public Tomato(double weight) {

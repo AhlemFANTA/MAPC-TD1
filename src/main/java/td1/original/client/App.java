@@ -8,13 +8,13 @@ import java.util.Arrays;
 import java.util.List;
 
 public class App {
-    public static void main(String args[]) {
-        Burger alice_dinner = new Burger(
+    public static void main(String[] args) {
+        Burger aliceDinner = new Burger(
                 "Fishy",
                 List.of(new Meat(WHITEFISH, 50),
                         new Sauce(BEARNAISE, 40))
         );
-        Burger bob_dinner = new Burger(
+        Burger bobDinner = new Burger(
                 "Beefy",
                 List.of(new Meat(BEEF, 100),
                         new Sauce(BURGER, 40),
@@ -23,7 +23,7 @@ public class App {
                         new DeepFriedOnions(10),
                         new Cheddar(15))
         );
-        Burger charles_dinner = new Burger(
+        Burger charlesDinner = new Burger(
                 "Own Style",
                 List.of(new Meat(BEEF,400),
                         new DeepFriedOnions(20),
@@ -34,9 +34,9 @@ public class App {
                         new Cheddar(30))
         );
         List<Burger> dinners = Arrays.asList(
-                alice_dinner,
-                bob_dinner,
-                charles_dinner
+                aliceDinner,
+                bobDinner,
+                charlesDinner
         );
         for (Burger dinner : dinners) {
             System.out.println(dinner);

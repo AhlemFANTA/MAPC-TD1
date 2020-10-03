@@ -2,7 +2,7 @@ package td1.original.api.general;
 
 public class Sauce implements Product {
 
-    public static enum SauceType {
+    public enum SauceType {
         BURGER, BARBECUE, BEARNAISE;
         // BURGER : 240 kcal / 100g
         // BARBECUE : 130 kcal / 100g
@@ -11,8 +11,8 @@ public class Sauce implements Product {
 
     private static double BASE_PRICE = 1;
 
-    private SauceType type;
-    private double weight;
+    private final SauceType type;
+    private final double weight;
 
     public Sauce(SauceType type, double weight) {
         this.type = type;

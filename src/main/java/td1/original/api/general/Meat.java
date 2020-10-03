@@ -8,21 +8,15 @@ public class Meat implements Product {
         // WHITEFISH : 170 kcal / 100g
 
         public double price() {
-            double rtr;
-            switch (this) {
-                case WHITEFISH:
-                    rtr = 6;
-                    break;
-                case BEEF:
-                default:
-                    rtr = 4;
+            if (this == MeatType.WHITEFISH) {
+                return 6;
             }
-            return rtr;
+            return 4;
         }
     }
 
-    private MeatType type;
-    private double weight;
+    private final MeatType type;
+    private final double weight;
 
     public Meat(MeatType type, double weight) {
         this.type = type;

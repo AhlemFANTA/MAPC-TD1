@@ -3,7 +3,7 @@ package td1.original.api.general;
 public class DeepFriedOnions implements Product {
     // 590 kcal / 100g
 
-    private double weight;
+    private final double weight;
     private double BASE_PRICE = 1.5;
 
     public DeepFriedOnions(double weight) {

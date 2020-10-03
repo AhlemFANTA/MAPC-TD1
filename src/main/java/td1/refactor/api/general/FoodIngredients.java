@@ -1,5 +1,5 @@
 package td1.refactor.api.general;
 
-public interface FoodConsituent {
+public interface FoodIngredients {
     double caloriesPer100g();
 }

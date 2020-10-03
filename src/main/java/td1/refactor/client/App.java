@@ -27,7 +27,7 @@ public class App {
 
         Burger charlesDinner = advisor
                 .selectRestaurant(RestaurantType.EXPENSIVE)
-                .orderPersonnal("Ownstyle", MeatType.BEEF, MeatSize.BIG)
+                .orderPersonal("Ownstyle", MeatType.BEEF, MeatSize.BIG)
                 .withOnion()
                 .withCheese()
                 .withSauce(SauceType.BARBECUE)

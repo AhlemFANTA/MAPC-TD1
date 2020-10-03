@@ -6,28 +6,19 @@ public class Meat implements FoodProduct {
         
         public double price() {
             double rtr;
-            switch (this) {
-                case WHITEFISH:
-                    rtr = 6;
-                    break;
-                case BEEF:
-                default:
-                    rtr = 4;
+            if (this == MeatType.WHITEFISH) {
+                rtr = 6;
+            } else {
+                rtr = 4;
             }
             return rtr;
         }
 
         public double caloriesPer100g() {
-            double rtr;
-            switch(this) {
-                case WHITEFISH:
-                    rtr = 170;
-                    break;
-                case BEEF:
-                default:
-                rtr = 200;
+            if (this == MeatType.WHITEFISH) {
+                return 170;
             }
-            return rtr;
+            return 200;
         }
     }
 
@@ -35,8 +26,8 @@ public class Meat implements FoodProduct {
         LITTLE, MEDIUM, BIG
     }
 
-    private MeatType type;
-    private double weight;
+    private final MeatType type;
+    private final double weight;
 
     public Meat(MeatType type, double weight) {
         this.type = type;

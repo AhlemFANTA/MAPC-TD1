@@ -80,4 +80,13 @@ public class ExpensiveBurgerBuilder implements BurgerBuilder {
     public Burger cook() {
         return new Burger(this.name, this.products);
     }
+    /*
+
+     * @startuml
+
+     * car --|> wheel
+
+     * @enduml
+
+     */
 }

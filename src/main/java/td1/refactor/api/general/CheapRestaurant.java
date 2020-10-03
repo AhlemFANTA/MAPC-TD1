@@ -31,7 +31,7 @@ class CheapRestaurant implements Restaurant {
     }
 
     @Override 
-    public BurgerBuilder orderPersonnal(String name, MeatType type, MeatSize size) {
+    public BurgerBuilder orderPersonal(String name, MeatType type, MeatSize size) {
         return new CheapBurgerBuilder(name, type, size);
     }
 }

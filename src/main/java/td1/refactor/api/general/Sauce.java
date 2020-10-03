@@ -2,28 +2,21 @@ package td1.refactor.api.general;
 
 public class Sauce implements FoodProduct {
 
-    public static enum SauceType {
+    public enum SauceType {
         BURGER, BARBECUE, BEARNAISE;
         
         public double caloriesPer100g() {
-            double rtr;
-            switch(this) {
-                case BURGER:
-                    rtr = 240;
-                    break;
-                case BARBECUE:
-                    rtr = 130;
-                    break;
-                default:
-                rtr = 550;
-            }
-            return rtr;
+            return switch (this) {
+                case BURGER -> 240;
+                case BARBECUE -> 130;
+                default -> 550;
+            };
         }
     }
 
     private static double BASE_PRICE = 1;
-    private SauceType type;
-    private double weight;
+    private final SauceType type;
+    private final double weight;
 
     public Sauce(SauceType type, double weight) {
         this.type = type;

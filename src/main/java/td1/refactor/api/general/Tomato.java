@@ -1,7 +1,7 @@
 package td1.refactor.api.general;
 
 public class Tomato implements FoodProduct {
-    private double weight;
+    private final double weight;
     private double BASE_PRICE = 0.5;
 
     public Tomato(double weight) {
