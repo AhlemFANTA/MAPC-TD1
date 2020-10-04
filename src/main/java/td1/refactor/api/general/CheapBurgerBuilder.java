@@ -8,7 +8,7 @@ import td1.refactor.api.general.Meat.MeatType;
 import td1.refactor.api.general.Sauce.SauceType;
 
 public class CheapBurgerBuilder implements BurgerBuilder {
-    private final List<FoodProduct> products;
+    private final List<DieteticElement> products;
     private final String name;
 
     public CheapBurgerBuilder(String name, MeatType type, MeatSize size) {

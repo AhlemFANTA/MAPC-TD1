@@ -1,6 +1,6 @@
 package td1.refactor.api.general;
 
-public class Sauce implements FoodProduct {
+public class Sauce implements DieteticElement {
 
     public enum SauceType {
         BURGER, BARBECUE, BEARNAISE;

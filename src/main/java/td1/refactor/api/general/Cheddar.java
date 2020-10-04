@@ -1,6 +1,6 @@
 package td1.refactor.api.general;
 
-public class Cheddar implements FoodProduct {
+public class Cheddar implements DieteticElement {
     private double weight;
     private double BASE_PRICE = 4;
 

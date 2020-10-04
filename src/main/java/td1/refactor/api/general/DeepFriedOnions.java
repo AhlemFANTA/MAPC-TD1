@@ -1,6 +1,6 @@
 package td1.refactor.api.general;
 
-public class DeepFriedOnions implements FoodProduct {
+public class DeepFriedOnions implements DieteticElement {
     private double weight;
     private double BASE_PRICE = 1.5;
 

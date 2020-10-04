@@ -2,11 +2,11 @@ package td1.refactor.api.general;
 
 import java.util.List;
 
-public class Burger implements FoodProduct {
+public class Burger implements DieteticElement {
     String name;
-    List<FoodProduct> items;
+    List<DieteticElement> items;
 
-    public Burger(String name, List<FoodProduct> items) {
+    public Burger(String name, List<DieteticElement> items) {
         this.name = name;
         this.items = items;
     }
@@ -23,7 +23,7 @@ public class Burger implements FoodProduct {
 
     @Override
     public double calories() {
-        return items.stream().map(FoodProduct::calories).reduce(0.0, Double::sum);
+        return items.stream().map(DieteticElement::calories).reduce(0.0, Double::sum);
     }
 
     @Override
