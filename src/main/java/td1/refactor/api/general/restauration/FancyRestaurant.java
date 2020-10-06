@@ -4,7 +4,6 @@ import td1.refactor.api.general.burger.BurgerBuilder;
 import td1.refactor.api.general.burger.FancyBurgerBuilder;
 import td1.refactor.api.general.burger.Meat.MeatSize;
 import td1.refactor.api.general.burger.Meat.MeatType;
-import td1.refactor.api.general.burger.Menu;
 import td1.refactor.api.general.burger.Sauce.SauceType;
 
 public class FancyRestaurant implements Restaurant {

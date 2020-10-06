@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>td1.refactor.api.general</OriginalElement>
+  <nodes>
+    <node x="0.0" y="1262.0">td1.refactor.api.general.restauration.FancyRestaurant</node>
+    <node x="224.0" y="1383.0">td1.refactor.api.general.restauration.Menu</node>
+    <node x="0.0" y="960.0">td1.refactor.api.general.burger.Sauce</node>
+    <node x="1222.0" y="1136.0">td1.refactor.api.general.restauration.Restaurant.RestaurantType</node>
+    <node x="0.0" y="368.0">td1.refactor.api.general.burger.FancyBurgerBuilder</node>
+    <node x="202.0" y="949.0">td1.refactor.api.general.burger.Burger</node>
+    <node x="431.0" y="1383.0">td1.refactor.api.general.restauration.RestaurantFactory</node>
+    <node x="184.0" y="1136.0">td1.refactor.api.general.restauration.Restaurant</node>
+    <node x="593.5" y="720.0">td1.refactor.api.general.burger.BurgerIngredients</node>
+    <node x="761.0" y="1136.0">td1.refactor.api.general.burger.Meat.MeatType</node>
+    <node x="439.5" y="709.0">td1.refactor.api.general.monetary.Product</node>
+    <node x="368.0" y="1262.0">td1.refactor.api.general.restauration.CheapRestaurant</node>
+    <node x="0.0" y="1383.0">td1.refactor.api.general.burger.Meat.MeatSize</node>
+    <node x="404.0" y="960.0">td1.refactor.api.general.burger.Tomato</node>
+    <node x="261.0" y="368.0">td1.refactor.api.general.burger.CheapBurgerBuilder</node>
+    <node x="1010.0" y="960.0">td1.refactor.api.general.burger.Meat</node>
+    <node x="107.5" y="0.0">td1.refactor.api.general.burger.BurgerBuilder</node>
+    <node x="512.0" y="835.0">td1.refactor.api.general.dietetic.DieteticElement</node>
+    <node x="808.0" y="960.0">td1.refactor.api.general.burger.DeepFriedOnions</node>
+    <node x="760.0" y="1383.0">td1.refactor.api.general.client.App</node>
+    <node x="990.0" y="1136.0">td1.refactor.api.general.burger.Sauce.SauceType</node>
+    <node x="606.0" y="960.0">td1.refactor.api.general.burger.Cheddar</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="td1.refactor.api.general.dietetic.DieteticElement" target="td1.refactor.api.general.monetary.Product">
+      <point x="-42.0" y="-27.0" />
+      <point x="554.0" y="810.0" />
+      <point x="506.5" y="810.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="td1.refactor.api.general.restauration.CheapRestaurant" target="td1.refactor.api.general.restauration.Restaurant">
+      <point x="0.0" y="-38.0" />
+      <point x="542.0" y="1237.0" />
+      <point x="445.0" y="1237.0" />
+      <point x="87.0" y="38.0" />
+    </edge>
+    <edge source="td1.refactor.api.general.burger.DeepFriedOnions" target="td1.refactor.api.general.dietetic.DieteticElement">
+      <point x="0.0" y="-60.0" />
+      <point x="899.0" y="919.0" />
+      <point x="638.0" y="919.0" />
+      <point x="42.0" y="27.0" />
+    </edge>
+    <edge source="td1.refactor.api.general.restauration.FancyRestaurant" target="td1.refactor.api.general.restauration.Restaurant">
+      <point x="0.0" y="-38.0" />
+      <point x="174.0" y="1237.0" />
+      <point x="271.0" y="1237.0" />
+      <point x="-87.0" y="38.0" />
+    </edge>
+    <edge source="td1.refactor.api.general.burger.Burger" target="td1.refactor.api.general.dietetic.DieteticElement">
+      <point x="0.0" y="-71.0" />
+      <point x="293.0" y="919.0" />
+      <point x="554.0" y="919.0" />
+      <point x="-42.0" y="27.0" />
+    </edge>
+    <edge source="td1.refactor.api.general.burger.Meat" target="td1.refactor.api.general.dietetic.DieteticElement">
+      <point x="0.0" y="-60.0" />
+      <point x="1101.0" y="909.0" />
+      <point x="666.0" y="909.0" />
+      <point x="70.0" y="27.0" />
+    </edge>
+    <edge source="td1.refactor.api.general.burger.Tomato" target="td1.refactor.api.general.dietetic.DieteticElement">
+      <point x="0.0" y="-60.0" />
+      <point x="495.0" y="929.0" />
+      <point x="582.0" y="929.0" />
+      <point x="-14.0" y="27.0" />
+    </edge>
+    <edge source="td1.refactor.api.general.burger.Sauce" target="td1.refactor.api.general.dietetic.DieteticElement">
+      <point x="0.0" y="-60.0" />
+      <point x="91.0" y="909.0" />
+      <point x="526.0" y="909.0" />
+      <point x="-70.0" y="27.0" />
+    </edge>
+    <edge source="td1.refactor.api.general.burger.CheapBurgerBuilder" target="td1.refactor.api.general.burger.BurgerBuilder">
+      <point x="0.0" y="-148.0" />
+      <point x="381.5" y="343.0" />
+      <point x="322.75" y="343.0" />
+      <point x="71.75" y="159.0" />
+    </edge>
+    <edge source="td1.refactor.api.general.burger.Cheddar" target="td1.refactor.api.general.dietetic.DieteticElement">
+      <point x="0.0" y="-60.0" />
+      <point x="697.0" y="929.0" />
+      <point x="610.0" y="929.0" />
+      <point x="14.0" y="27.0" />
+    </edge>
+    <edge source="td1.refactor.api.general.dietetic.DieteticElement" target="td1.refactor.api.general.burger.BurgerIngredients">
+      <point x="42.0" y="-27.0" />
+      <point x="638.0" y="810.0" />
+      <point x="685.5" y="810.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="td1.refactor.api.general.burger.FancyBurgerBuilder" target="td1.refactor.api.general.burger.BurgerBuilder">
+      <point x="0.0" y="-148.0" />
+      <point x="120.5" y="343.0" />
+      <point x="179.25" y="343.0" />
+      <point x="-71.75" y="159.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="604.0" y="1238.0" />
+  <SelectedNodes>
+    <node>td1.refactor.api.general.client.App</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -2,7 +2,7 @@ package td1.refactor.api.general.client;
 
 import td1.refactor.api.general.burger.Meat.MeatSize;
 import td1.refactor.api.general.burger.Meat.MeatType;
-import td1.refactor.api.general.burger.Menu;
+import td1.refactor.api.general.restauration.Menu;
 import td1.refactor.api.general.restauration.Restaurant.RestaurantType;
 import td1.refactor.api.general.burger.Sauce.SauceType;
 import td1.refactor.api.general.burger.Burger;
