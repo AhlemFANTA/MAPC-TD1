@@ -1,5 +1,5 @@
 @startuml classdiagram
-!include ../commons.style
+!include ../style/commons.style
 
 package original.api.general {
 
